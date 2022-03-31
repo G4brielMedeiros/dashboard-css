@@ -1,113 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-    <title>Dashboard</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <form class="search" action="#">
-          <button>
-            <img src="../icons/search.svg" />
-          </button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <form class="search" action="#">
+                    <button>
+                        <img src="../icons/search.svg" />
+                    </button>
 
-          <input type="text" />
-        </form>
+                    <input type="text" />
+                </form>
 
-        <div class="profile-buttons">
+                <div class="profile-buttons">
+                    <img src="../icons/notifications.svg" class="icon notification" />
+                    <img src="../images/profile.jpeg" class="profile-pic" />
+                    <h2>Person NoHuman</h2>
+                </div>
 
-          <img src="../icons/notifications.svg" class="icon notification">
-          <img src="../images/profile.jpeg" class="profile-pic">
-          <h2>Person NoHuman</h2>
+                <div class="welcome">
+                    <img class="profile-pic welcome-pic" src="../images/profile.jpeg" />
 
+                    <h3 class="welcome-message">
+                        Hi there,<br />Person NoHuman (@nobody)
+                    </h3>
+                </div>
+
+                <div class="post-buttons">
+                    <button class="post-button">New</button>
+                    <button class="post-button">Upload</button>
+                    <button class="post-button">Share</button>
+                </div>
+            </header>
+            <nav>
+                <h1><img src="../icons/dashboard.svg" class="icon" />Dashboard</h1>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <img src="../icons/home.svg" class="icon" />Home
+                    </li>
+                    <li class="menu-item">
+                        <img src="../icons/profile.svg" class="icon" />Profile
+                    </li>
+                    <li class="menu-item">
+                        <img src="../icons/messages.svg" class="icon" />Messages
+                    </li>
+                    <li class="menu-item">
+                        <img src="../icons/history.svg" class="icon" />History
+                    </li>
+                    <li class="menu-item">
+                        <img src="../icons/task.svg" class="icon" />Tasks
+                    </li>
+                    <li class="menu-item">
+                        <img src="../icons/communities.svg" class="icon" />Communities
+                    </li>
+                </ul>
+
+                <ul class="menu">
+                    <li class="menu-item">
+                        <img src="../icons/settings.svg" class="icon" />Settings
+                    </li>
+                    <li class="menu-item">
+                        <img src="../icons/settings.svg" class="icon" />Support
+                    </li>
+                    <li class="menu-item">
+                        <img src="../icons/privacy.svg" class="icon" />Privacy
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                <h4>Your Projects</h4>
+
+                <div class="project-cards">
+                    <!--(article.project-card>h4{title title}+p.project-description{blah blah blah}+div.project-buttons>button.icon.project-button*3)*6-->
+
+                    <article class="project-card">
+                        <h4>title title</h4>
+                        <p class="project-description">
+                            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                            lorem lorem
+                        </p>
+                        <div class="project-buttons">
+                            <button class="icon project-button"></button
+                            ><button class="icon project-button"></button
+                            ><button class="icon project-button"></button>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h4>title title</h4>
+                        <p class="project-description">
+                            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                            lorem lorem
+                        </p>
+                        <div class="project-buttons">
+                            <button class="icon project-button"></button
+                            ><button class="icon project-button"></button
+                            ><button class="icon project-button"></button>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h4>title title</h4>
+                        <p class="project-description">
+                            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                            lorem lorem
+                        </p>
+                        <div class="project-buttons">
+                            <button class="icon project-button"></button
+                            ><button class="icon project-button"></button
+                            ><button class="icon project-button"></button>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h4>title title</h4>
+                        <p class="project-description">
+                            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                            lorem lorem
+                        </p>
+                        <div class="project-buttons">
+                            <button class="icon project-button"></button
+                            ><button class="icon project-button"></button
+                            ><button class="icon project-button"></button>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h4>title title</h4>
+                        <p class="project-description">
+                            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                            lorem lorem
+                        </p>
+                        <div class="project-buttons">
+                            <button class="icon project-button"></button
+                            ><button class="icon project-button"></button
+                            ><button class="icon project-button"></button>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h4>title title</h4>
+                        <p class="project-description">
+                            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                            lorem lorem
+                        </p>
+                        <div class="project-buttons">
+                            <button class="icon project-button"></button
+                            ><button class="icon project-button"></button
+                            ><button class="icon project-button"></button>
+                        </div>
+                    </article>
+                </div>
+            </main>
+            <aside>aside</aside>
         </div>
-
-        <div class="welcome">
-          <img class="profile-pic welcome-pic" src="../images/profile.jpeg">
-
-          <h3 class="welcome-message">Hi there,<br>Person NoHuman (@nobody)</h3>
-        </div>
-
-        <div class="post-buttons">
-          <button class="post-button">New</button>
-          <button class="post-button">Upload</button>
-          <button class="post-button">Share</button>
-        </div>
-      </header>
-      <nav>
-        <h1><img src="../icons/dashboard.svg" class="icon" />Dashboard</h1>
-        <ul class="menu">
-          <li class="menu-item"><img src="../icons/home.svg" class="icon" />Home</li>
-          <li class="menu-item">
-            <img src="../icons/profile.svg" class="icon" />Profile
-          </li>
-          <li class="menu-item">
-            <img src="../icons/messages.svg" class="icon" />Messages
-          </li>
-          <li class="menu-item">
-            <img src="../icons/history.svg" class="icon" />History
-          </li>
-          <li class="menu-item"><img src="../icons/task.svg" class="icon" />Tasks</li>
-          <li class="menu-item">
-            <img src="../icons/communities.svg" class="icon" />Communities
-          </li>
-        </ul>
-
-        <ul class="menu">
-          <li class="menu-item">
-            <img src="../icons/settings.svg" class="icon" />Settings
-          </li>
-          <li class="menu-item">
-            <img src="../icons/settings.svg" class="icon" />Support
-          </li>
-          <li class="menu-item">
-            <img src="../icons/privacy.svg" class="icon" />Privacy
-          </li>
-        </ul>
-      </nav>
-      <main>
-        <h4>
-          Your Projects
-        </h4>
-        <div class="project-cards">
-          <article class="project-card">
-            <h4>title title</h4>
-            <p class="project-description">blah blah blah</p>
-            <div class="project-buttons"><button class="icon project-button"></button><button class="icon project-button"></button><button class="icon project-button"></button></div>
-          </article>
-          <article class="project-card">
-            <h4>title title</h4>
-            <p class="project-description">blah blah blah</p>
-            <div class="project-buttons"><button class="icon project-button"></button><button class="icon project-button"></button><button class="icon project-button"></button></div>
-          </article>
-          <article class="project-card">
-            <h4>title title</h4>
-            <p class="project-description">blah blah blah</p>
-            <div class="project-buttons"><button class="icon project-button"></button><button class="icon project-button"></button><button class="icon project-button"></button></div>
-          </article>
-          <article class="project-card">
-            <h4>title title</h4>
-            <p class="project-description">blah blah blah</p>
-            <div class="project-buttons"><button class="icon project-button"></button><button class="icon project-button"></button><button class="icon project-button"></button></div>
-          </article>
-          <article class="project-card">
-            <h4>title title</h4>
-            <p class="project-description">blah blah blah</p>
-            <div class="project-buttons"><button class="icon project-button"></button><button class="icon project-button"></button><button class="icon project-button"></button></div>
-          </article>
-          <article class="project-card">
-            <h4>title title</h4>
-            <p class="project-description">blah blah blah</p>
-            <div class="project-buttons"><button class="icon project-button"></button><button class="icon project-button"></button><button class="icon project-button"></button></div>
-          </article>
-        </div>
-      </main>
-      <aside>aside</aside>
-    </div>
-  </body>
+    </body>
 </html>
