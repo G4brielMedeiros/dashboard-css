@@ -4,6 +4,7 @@
   --default-bgc: #0ea5e9;
   --default-bgc-dark: #0284c7;
   --default-bgc-darker: #0369a1;
+  --default-light-color: #e2e8f0;
   --yellow-200: #fde68a;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -127,7 +128,7 @@ header > * {
   margin: 0px 10px;
 
   border: none;
-  background-color: #e2e8f0;
+  background-color: var(--default-light-color);
   border-radius: 30px;
   height: 30px;
   padding: 0px 20px;
@@ -136,12 +137,46 @@ header > * {
 .search button {
   border: none;
   background-color: white;
+  padding: 0;
+  margin: 0;
+
+  height: 25px;
+  width: 25px;
+}
+
+.search button > img {
+  height: 100%;
+  width: auto;
 }
 
 
-.profile-buttons {}
+
+.profile-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.notification {
+  padding: 0;
+  height: 25px;
+  width:  25px;
+}
+
+.profile-picture {
+  width: 50px;
+  border-radius: 50px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
 
 .welcome {}
 
 .post-buttons {}
+
 
