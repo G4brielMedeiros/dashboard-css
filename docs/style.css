@@ -6,6 +6,7 @@
   --default-bgc-darker: #0369a1;
   --default-light-color: #e2e8f0;
   --yellow-200: #fde68a;
+  --default-shadow-color: #d1d1d1;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
@@ -17,11 +18,10 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: minmax(20%, 200px) 3fr 1fr;
-  grid-template-rows: max(20vh, 150px) 80vh;
-  
+  grid-template-rows: 200px 100%;
+
+  min-height: 100vh;
 }
-
-
 
 nav {
   grid-column: 1 / 2;
@@ -52,6 +52,12 @@ main {
   grid-row: 2 / 3;
 }
 
+main,
+aside {
+  background-color: var(--default-light-color);
+  padding: 30px 20px;
+}
+
 aside {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
@@ -79,7 +85,7 @@ ul {
 
   display: flex;
   align-items: center;
- }
+}
 
 .menu-item:hover {
   background-color: var(--default-bgc-dark);
@@ -89,34 +95,27 @@ ul {
   background-color: var(--default-bgc-darker);
 }
 
-
-
-
-
-
 header {
   grid-column: 2 / 4;
   grid-row: 1 / 2;
 
   display: grid;
-    grid-template-columns: 5fr 3fr;
-    grid-template-rows: 1fr 1fr;
-  
+  grid-template-columns: 5fr 3fr;
+  grid-template-rows: 1fr 1fr;
+
   padding: 10px 30px;
 
   row-gap: 20px;
 
-  box-shadow: 0px 1px 10px #969696;
+  box-shadow: 0px 5px 10px var(--default-shadow-color);
 
- 
+  position: relative;
 }
-
 
 .search {
   display: flex;
   align-items: center;
 }
-
 
 .search > input {
   display: block;
@@ -145,8 +144,6 @@ header {
   width: auto;
 }
 
-
-
 .profile-buttons {
   display: flex;
   justify-content: center;
@@ -157,7 +154,7 @@ header {
 .notification {
   padding: 0;
   height: 25px;
-  width:  25px;
+  width: 25px;
 }
 
 .profile-pic {
@@ -165,7 +162,7 @@ header {
   border-radius: 50px;
 }
 
-.welcome-pic{
+.welcome-pic {
   width: 70px;
   height: 70px;
 }
@@ -209,4 +206,28 @@ h2 {
   color: white;
   font-weight: bold;
   font-size: 0.9em;
+}
+
+h4 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.project-cards {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 25px;
+  justify-items: center;
+}
+
+.project-card {
+  background-color: white;
+  height: 250px;
+  width: 100%;
+
+  border-radius: 10px;
+
+  box-shadow: 5px 5px 10px var(--default-shadow-color);
 }
