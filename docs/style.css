@@ -19,7 +19,7 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 300px 3fr 1fr;
+    grid-template-columns: 300px 3fr minmax(250px, 1fr);
     grid-template-rows: 200px 100%;
 
     min-height: 100vh;
@@ -216,7 +216,7 @@ h2 {
 h5 {
     margin: 0;
     margin-bottom: 10px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: normal;
 }
 
@@ -231,17 +231,20 @@ h5 {
 }
 
 .project-card {
+    padding-top: 10px;
     background-color: white;
-    height: 250px;
+    height: 240px;
     width: 100%;
     border-radius: 10px;
-
-    box-shadow: 5px 5px 10px var(--default-shadow-color);
 
     border-left: 10px solid var(--default-green);
 
     display: grid;
     grid-template-rows: 1fr 4fr 2fr;
+}
+
+.shadow {
+    box-shadow: 5px 5px 10px var(--default-shadow-color);
 }
 
 h4 {
@@ -275,16 +278,53 @@ button {
     width: 30px;
 }
 
-.project-icon, .notification{
+.project-icon,
+.notification {
     margin: 0;
     padding: 5px;
     border-radius: 50px;
 }
 
-.project-icon:hover, .notification:hover {
+.project-icon:hover,
+.notification:hover {
     background-color: var(--default-shadow-color);
 }
 
-.project-icon:active, .notification:active {
+.project-icon:active,
+.notification:active {
     background-color: var(--default-shadow-color-dark);
+}
+
+aside-title {
+    margin: 0;
+    padding: 0;
+}
+
+.announcements-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement-title {
+    margin: 0;
+
+    font-size: 0.8em;
+}
+
+.announcement-description {
+    margin: 0;
+
+    font-size: 0.7em;
+
+    color: var(--default-p-color);
+    /* border-bottom: 1px solid var(--default-shadow-color); */
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--default-light-color);
 }
