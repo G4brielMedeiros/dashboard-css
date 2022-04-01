@@ -7,6 +7,7 @@
     --default-light-color: #e2e8f0;
     --default-green: #22c55e;
     --default-shadow-color: #d1d1d1;
+    --default-shadow-color-dark: #bbbbbb;
     --default-p-color: #64748b;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
@@ -238,11 +239,13 @@ h5 {
     box-shadow: 5px 5px 10px var(--default-shadow-color);
 
     border-left: 10px solid var(--default-green);
+
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr;
 }
 
 h4 {
-    margin: 0px 0 15px 20px;
-
+    margin: 10px 0px 5px 20px;
     font-size: 1.4em;
     font-weight: normal;
     letter-spacing: 1px;
@@ -259,11 +262,26 @@ button {
 }
 
 .project-buttons {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 30px;
+    margin-right: 40px;
 
-    position: relative;
-    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     gap: 30px;
+}
+
+.project-icon {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.project-icon:hover {
+    background-color: var(--default-shadow-color);
+}
+
+.project-icon:active {
+    background-color: var(--default-shadow-color-dark);
 }
