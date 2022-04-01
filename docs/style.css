@@ -15,6 +15,7 @@
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 .wrapper {
@@ -49,7 +50,6 @@ h1 {
 nav > ul {
     display: flex;
     flex-direction: column;
-    padding-left: 0;
 }
 
 main {
@@ -273,9 +273,6 @@ button {
 .project-icon:active,
 .notification:active {
     background-color: var(--default-shadow-color-dark);
-}
-
-aside-title {
 }
 
 .announcements-card {
