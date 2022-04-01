@@ -13,8 +13,11 @@
     font-size: 18px;
 }
 
-body {
+* {
     margin: 0;
+}
+
+body {
 }
 
 .wrapper {
@@ -142,7 +145,6 @@ header {
     border: none;
     background-color: white;
     padding: 0;
-    margin: 0;
 
     height: 25px;
     width: 25px;
@@ -177,7 +179,6 @@ header {
 }
 
 h2 {
-    margin: 0;
     padding: 0;
     font-size: 0.9em;
 }
@@ -189,7 +190,6 @@ h2 {
 }
 
 .welcome-message {
-    margin: 0;
     padding: 0;
     line-height: 20px;
     width: 100%;
@@ -218,7 +218,6 @@ h2 {
 }
 
 h5 {
-    margin: 0;
     margin-bottom: 10px;
     font-size: 1.3em;
     font-weight: normal;
@@ -248,14 +247,12 @@ h5 {
 }
 
 h4 {
-    margin: 0;
     font-size: 1.4em;
     font-weight: normal;
     letter-spacing: 1px;
 }
 
 .project-description {
-    margin: 0;
     color: var(--default-p-color);
 }
 
@@ -277,7 +274,6 @@ button {
 
 .project-icon,
 .notification {
-    margin: 0;
     padding: 5px;
     border-radius: 50px;
 }
@@ -293,7 +289,6 @@ button {
 }
 
 aside-title {
-    margin: 0;
     padding: 0;
 }
 
@@ -303,14 +298,10 @@ aside-title {
 }
 
 .announcement-title {
-    margin: 0;
-
     font-size: 0.8em;
 }
 
 .announcement-description {
-    margin: 0;
-
     font-size: 0.7em;
 
     color: var(--default-p-color);
@@ -318,6 +309,7 @@ aside-title {
 }
 
 hr {
+    margin: 9px 0px;
     width: 100%;
     border: 1px solid var(--default-light-color);
 }
@@ -335,12 +327,10 @@ hr {
 }
 
 .trend-title {
-    margin: 0;
     font-size: 1em;
 }
 
 .trend-description {
-    margin: 0;
     color: var(--default-p-color);
 }
 
