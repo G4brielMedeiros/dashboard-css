@@ -17,9 +17,6 @@
     margin: 0;
 }
 
-body {
-}
-
 .wrapper {
     display: grid;
     grid-template-columns: 300px 3fr minmax(300px, 1fr);
@@ -29,6 +26,8 @@ body {
 }
 
 nav {
+    padding-top: 10px;
+
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 
