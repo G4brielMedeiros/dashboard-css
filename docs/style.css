@@ -241,18 +241,10 @@ h5 {
     grid-template-rows: 1fr 4fr 2fr;
 }
 
-.shadow {
-    box-shadow: 5px 5px 10px var(--default-shadow-color);
-}
-
 h4 {
     font-size: 1.4em;
     font-weight: normal;
     letter-spacing: 1px;
-}
-
-.project-description {
-    color: var(--default-p-color);
 }
 
 button {
@@ -302,9 +294,6 @@ aside-title {
 
 .announcement-description {
     font-size: 0.7em;
-
-    color: var(--default-p-color);
-    /* border-bottom: 1px solid var(--default-shadow-color); */
 }
 
 hr {
@@ -329,12 +318,13 @@ hr {
     font-size: 1em;
 }
 
-.trend-description {
-    color: var(--default-p-color);
-}
-
 .card {
     padding: 25px;
     border-radius: 10px;
     background-color: white;
+    box-shadow: 5px 5px 10px var(--default-shadow-color);
+}
+
+p {
+    color: var(--default-p-color);
 }
